@@ -31,16 +31,13 @@ export function Navbar() {
                 key={link.path}
                 to={link.path}
                 className={cn(
-                  "text-[11px] uppercase tracking-[1.5px] font-semibold transition-colors hover:text-kayhab-caramel",
+                  "text-[11px] uppercase tracking-[1.5px] font-poppins font-semibold transition-colors hover:text-kayhab-caramel",
                   location.pathname === link.path ? "text-kayhab-caramel" : "text-kayhab-primary"
                 )}
               >
                 {link.name}
               </Link>
             ))}
-            <Link to="/admin" className="w-8 h-8 flex items-center justify-center border border-kayhab-caramel rounded-full text-kayhab-primary hover:text-kayhab-caramel transition-colors">
-              <ShieldCheck className="w-4 h-4" />
-            </Link>
           </div>
 
           {/* Mobile Nav Button */}
@@ -62,20 +59,13 @@ export function Navbar() {
                 to={link.path}
                 onClick={() => setIsOpen(false)}
                 className={cn(
-                  "block px-3 py-2 rounded-md text-base font-medium",
+                  "block px-3 py-2 rounded-md text-base font-semibold font-poppins",
                   location.pathname === link.path ? "text-kayhab-caramel bg-kayhab-primary/5" : "text-kayhab-primary hover:text-kayhab-caramel hover:bg-kayhab-primary/5"
                 )}
               >
                 {link.name}
               </Link>
             ))}
-            <Link
-              to="/admin"
-              onClick={() => setIsOpen(false)}
-              className="flex items-center px-3 py-2 rounded-md text-base font-medium text-kayhab-primary hover:text-kayhab-caramel hover:bg-kayhab-primary/5"
-            >
-              <ShieldCheck className="w-5 h-5 mr-2" /> Admin
-            </Link>
           </div>
         </div>
       )}

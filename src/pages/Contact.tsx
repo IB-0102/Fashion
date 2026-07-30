@@ -76,7 +76,7 @@ export function Contact() {
                 <label className="block text-sm font-poppins text-kayhab-primary/80 mb-2">Message</label>
                 <textarea required name="message" rows={5} className="w-full px-4 py-3 rounded-lg border border-kayhab-primary/20 focus:border-kayhab-caramel focus:ring-2 focus:ring-kayhab-caramel/20 outline-none transition-all font-poppins bg-kayhab-cream/30 resize-none"></textarea>
               </div>
-              <button disabled={isSubmitting} type="submit" className="w-full py-4 bg-kayhab-primary hover:bg-kayhab-chocolate text-kayhab-cream font-bold rounded-lg transition-all duration-300 font-poppins disabled:opacity-70">
+              <button disabled={isSubmitting} type="submit" className="w-full py-4 bg-kayhab-primary hover:bg-kayhab-chocolate text-kayhab-cream font-semibold rounded-lg transition-all duration-300 font-poppins disabled:opacity-70">
                 {isSubmitting ? 'Sending...' : 'Send Message'}
               </button>
             </form>

@@ -66,7 +66,7 @@ export function AdminLogin() {
 
           <button 
             type="submit"
-            className="w-full flex items-center justify-center py-4 bg-kayhab-primary hover:bg-kayhab-chocolate text-kayhab-cream font-bold rounded-xl transition-all duration-300 font-poppins"
+            className="w-full flex items-center justify-center py-4 bg-kayhab-primary hover:bg-kayhab-chocolate text-kayhab-cream font-semibold rounded-xl transition-all duration-300 font-poppins"
           >
             Authenticate <ArrowRight className="ml-2 w-5 h-5" />
           </button>

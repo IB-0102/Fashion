@@ -65,18 +65,18 @@ export function Home() {
               <div className="flex justify-between items-start">
                 <span className="text-[10px] uppercase tracking-[2px] text-kayhab-caramel">0{idx + 1}. Collection</span>
               </div>
-              <h3 className="text-xl my-2 font-playfair font-normal text-kayhab-primary">{collection.name}</h3>
+              <h3 className="text-xl my-2 font-playfair font-semibold text-kayhab-primary">{collection.name}</h3>
               {collection.price ? (
                 <p className="text-[14px] font-semibold text-kayhab-primary mb-2">₦{collection.price.toLocaleString()}</p>
               ) : null}
-              <p className="text-[12px] leading-[1.4] text-kayhab-chocolate font-poppins max-w-[70%]">
+              <p className="text-[12px] leading-[1.4] text-kayhab-chocolate font-poppins font-normal max-w-[70%]">
                 {collection.description}
               </p>
             </div>
             <div className="relative z-10 mt-4">
               <button 
                 onClick={() => handleOrder(collection.name)}
-                className="px-4 py-2 bg-kayhab-primary hover:bg-kayhab-chocolate text-white text-[10px] uppercase tracking-[1px] font-semibold rounded-[4px] transition-colors"
+                className="px-4 py-2 bg-kayhab-primary hover:bg-kayhab-chocolate text-white text-[10px] uppercase tracking-[1px] font-poppins font-semibold rounded-[4px] transition-colors"
               >
                 Order Now
               </button>
@@ -109,7 +109,7 @@ export function Home() {
                       </div>
                     )}
                   </div>
-                  <h4 className="font-playfair text-lg font-bold text-kayhab-primary mb-1">{product.name}</h4>
+                  <h4 className="font-playfair text-lg font-semibold text-kayhab-primary mb-1">{product.name}</h4>
                   <p className="font-poppins text-kayhab-caramel font-semibold">₦{product.price.toLocaleString()}</p>
                 </div>
               ))}
@@ -153,7 +153,7 @@ export function Home() {
           <h2 className="text-4xl md:text-5xl font-playfair font-bold text-kayhab-primary mb-8">
             Ready to Elevate Your Style?
           </h2>
-          <Link to="/contact" className="inline-block px-10 py-5 bg-kayhab-primary hover:bg-kayhab-chocolate text-kayhab-cream font-bold rounded-full transition-all duration-300 transform hover:scale-105 shadow-xl shadow-kayhab-primary/20">
+          <Link to="/contact" className="inline-block px-10 py-5 bg-kayhab-primary hover:bg-kayhab-chocolate text-kayhab-cream font-semibold font-poppins rounded-full transition-all duration-300 transform hover:scale-105 shadow-xl shadow-kayhab-primary/20">
             Contact KAYHAB
           </Link>
         </div>
